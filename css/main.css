@@ -117,16 +117,23 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  font-weight: bold; }
   h1.lg-heading,
   h2.lg-heading,
-  h3.lg-heading {
+  h3.lg-heading,
+  h4.lg-heading,
+  h5.lg-heading {
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
+  h3.sm-heading,
+  h4.sm-heading,
+  h5.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -188,12 +195,12 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2.5rem; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid;
-    border-radius: 2.5rem; }
+    border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #0bd8ac;
@@ -206,7 +213,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 5rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
@@ -222,8 +229,7 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem;
-  border-radius: 2.5rem; }
+  margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #0bd8ac;
     color: #000; }
@@ -247,8 +253,7 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 3px #0bd8ac solid;
-  margin-bottom: 0.3rem;
-  border-radius: 2.5rem; }
+  margin-bottom: 0.3rem; }
 
 @media screen and (min-width: 1171px) {
   .projects {
